@@ -3,7 +3,7 @@ package com.campusdual.classroom;
 public class Exercise09 {
 
     public static void main(String[] args) {
-
+        doWhileLoop(12);
     }
 
     //TODO ↓
@@ -12,6 +12,10 @@ public class Exercise09 {
     // Entra con valor: X+1, sale con valor: X+2;
     // etc.
     public static void doWhileLoop(int num) {
-
+        int val = 0;
+        do{
+            System.out.println("Entra con valor: " + val + ", sale con valor: " + (val + 1));
+            val++;
+        } while(val < num);
     }
 }
